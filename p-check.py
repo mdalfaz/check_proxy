@@ -16,7 +16,7 @@ def print_banner():
     ╚═╝          ╚═════╝╚═╝  ╚═╝╚══════╝ ╚═════╝╚═╝  ╚═╝
     """
     print(Fore.MAGENTA + banner + Fore.RESET)
-    print(Fore.CYAN + "Developed by: Alfaz Infosec @infosec" + Fore.RESET)
+    print(Fore.CYAN + "Developed by: Alfaz Infosec @alfazinfosec" + Fore.RESET)
 
 def validate_proxy(proxy):
     proxy = proxy.strip()
