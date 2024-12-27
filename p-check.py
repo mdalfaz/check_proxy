@@ -6,6 +6,18 @@ from colorama import Fore
 # Initialize colorama
 colorama.init()
 
+def print_banner():
+    banner = """
+    ██████╗      ██████╗██╗  ██╗███████╗ ██████╗██╗  ██╗
+    ██╔══██╗    ██╔════╝██║  ██║██╔════╝██╔════╝██║ ██╔╝
+    ██████╔╝    ██║     ███████║█████╗  ██║     █████╔╝ 
+    ██╔═══╝     ██║     ██╔══██║██╔══╝  ██║     ██╔═██╗ 
+    ██║         ╚██████╗██║  ██║███████╗╚██████╗██║  ██╗
+    ╚═╝          ╚═════╝╚═╝  ╚═╝╚══════╝ ╚═════╝╚═╝  ╚═╝
+    """
+    print(Fore.MAGENTA + banner + Fore.RESET)
+    print(Fore.CYAN + "Developed by: Alfaz Infosec @infosec" + Fore.RESET)
+
 def validate_proxy(proxy):
     proxy = proxy.strip()
     if ':' not in proxy:
@@ -22,6 +34,9 @@ def validate_proxy(proxy):
         return (proxy, False)
 
 def main():
+    # Print the banner and developer information
+    print_banner()
+
     # Get the path for the proxy list
     proxy_list_path = input(Fore.CYAN + "Enter the path to the proxy list: " + Fore.RESET)
 
@@ -58,3 +73,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
