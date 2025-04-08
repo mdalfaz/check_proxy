@@ -1,3 +1,6 @@
+![Screenshot 2024-12-27 193929](https://github.com/user-attachments/assets/9a120342-9c2c-4015-a574-cc91be4cfc87)
+
+
 # Proxy Validator Script
 
 This script validates a list of proxies to determine if they are working. The working proxies are saved to an output file.
